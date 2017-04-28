@@ -14,9 +14,17 @@ if(up&&down){
 
 if(objZhuang.x-objZhuang.sprite_xoffset>x-sprite_xoffset+sprite_width||
    objZhuang.x-objZhuang.sprite_xoffset+objZhuang.sprite_width<x-sprite_xoffset){
-	if(objZhuang.y-objZhuang.sprite_yoffset>y-sprite_yoffset+sprite_height){
+	/*if(objZhuang.y-objZhuang.sprite_yoffset>y-sprite_yoffset+sprite_height){
 		y += spd;
 	} else if(objZhuang.y-objZhuang.sprite_yoffset+objZhuang.sprite_height<y-sprite_yoffset){
 		y -= spd;
+	}*/
+	
+	if(objZhuang.y-y>=spd){
+		y += spd;
+	}else if(y-objZhuang.y>=spd){
+		y -= spd;
+	}else{
+		
 	}
 }
